@@ -67,9 +67,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nuf-dU-IxD">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="m1l-mI-fNz"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UL7-aO-qsi"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="m1l-mI-fNz">
+                            <connections>
+                                <action selector="tapEditButton:" destination="BYZ-38-t0r" id="iqT-2n-Yj3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UL7-aO-qsi">
+                            <connections>
+                                <action selector="tabAddButton:" destination="BYZ-38-t0r" id="npK-v8-O8m"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableButton" destination="RpE-Cz-6Aj" id="Ldi-4P-fxl"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-601" y="63"/>
